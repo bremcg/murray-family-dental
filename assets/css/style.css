@@ -46,7 +46,7 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 img {
-    max-width: 100%;
+	max-width: 100%;
 }
 .ptb-100 {
     padding-top: 100px;
@@ -115,8 +115,8 @@ button {
 	z-index: -1;
 	bottom: auto;
     background: #00c6ff;
-    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
-    background: linear-gradient(to right, #0072ff, #00c6ff);
+    background: -webkit-linear-gradient(to right, #78DCB0, #00c6ff);
+    background: linear-gradient(to right, #78DCB0, #00c6ff);
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -341,21 +341,21 @@ Navbar CSS
 	padding: 0;
 }
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav li a:hover {
-	color: #007aff !important;
+	color: #30ABDF  !important;
 }
 .navbar-light .navbar-nav .active > a, .navbar-light .navbar-nav a.active, .navbar-light .navbar-nav a.show, .navbar-light .navbar-nav .show > a {
-	color: #007aff !important;
+	color: #30ABDF  !important;
 }
 .appointment-btn {
 	font-size: 14px;
 	font-weight: 600;
-	color: #0075ff;
-	border: 1px solid #0075ff;
+	color: #30ABDF;
+	border: 1px solid #30ABDF;
 	padding: 8px 30px;
 	border-radius: 30px;
 }
 .appointment-btn:hover {
-	background: #0075ff;
+	background: #30ABDF;
     color: #fff;
 }
 .appointment-btn.white-btn {
@@ -363,11 +363,11 @@ Navbar CSS
 	border-color: #fff;
 }
 .appointment-btn.white-btn:hover {
-	border-color: #0075ff;
+	border-color: #30ABDF;
 }
 .navbar.is-sticky .appointment-btn.white-btn {
-	color: #0075ff;
-	border-color: #0075ff;
+	color: #30ABDF;
+	border-color: #30ABDF;
 }
 .navbar.is-sticky .appointment-btn.white-btn:hover {
 	color: #fff;
@@ -379,6 +379,10 @@ Navbar CSS
 }
 .navbar.navbar-two.is-sticky {
 	position: fixed;
+}
+/* Overrides */
+.navbar-toggle-btn, .appointment-btn {
+	margin-top: 21px;
 }
 
 
@@ -418,7 +422,7 @@ Main Banner CSS
 	line-height: 39px;
 }
 .hero-content h1 span {
-    color: #0078ff;
+    color: #30ABDF;
 }
 .hero-content p {
 	margin-bottom: 25px;
@@ -514,7 +518,7 @@ Boxes Area CSS
 }
 .single-box i {
 	font-size: 40px;
-	color: #0075ff;
+	color: #30ABDF;
 }
 .single-box h3 {
 	font-size: 18px;
@@ -779,7 +783,7 @@ Our Departments CSS
     color: #fff;
 }
 .tabs li a i {
-	color: #0075ff;
+	color: #30ABDF;
 	font-size: 40px;
 	margin-bottom: 15px;
 	display: inline-block;
@@ -881,22 +885,23 @@ Make an Appointment CSS
     position: relative;
 }
 .appointment-area::before, .appointment-area::after {
-    content: '';
+    /* content: '';
     position: absolute;
     right: 0;
     top: 0;
     width: 50%;
-    height: 100%;
+    height: 100%; */
 }
 .appointment-area::before {
-	background: linear-gradient(45deg, rgba(0, 117, 255, .8) 100%, transparent 100%);
+	/* background: linear-gradient(45deg, rgba(48,171,223,.8) 100%, transparent 100%); */
 	z-index: 1;
 }
 .appointment-area::after {
-    background-image: url(../../assets/img/appointment-bg.jpg);
+    /* background-image: url(../../assets/img/appointment-bg.jpg);
     background-position: center center;
     background-size: cover;
-    background-repeat: no-repeat;
+	background-repeat: no-repeat; */
+	background: none;
 }
 .appointment-area .section-title {
 	text-align: left;
@@ -937,8 +942,8 @@ Make an Appointment CSS
 	color: #fff;
 	padding: 8px 20px;
 	background: #00c6ff;
-	background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
-	background: linear-gradient(to right, #0072ff, #00c6ff);
+	background: -webkit-linear-gradient(to right, #30ABDF , #00c6ff);
+	background: linear-gradient(to right, #30ABDF , #00c6ff);
 	font-size: 16px;
 	position: relative;
 }
@@ -991,9 +996,10 @@ Make an Appointment CSS
     color: #92a5b8;
 }
 .appointment-form form .btn {
-	border: transparent;
+	/* border: transparent;
 	margin-top: 5px;
-	color: #0075ff;
+	color: #30ABDF; */
+	display: none:
 }
 .appointment-form form .btn::after {
 	background: #fff !important;
@@ -1047,7 +1053,7 @@ Services CSS
 }
 .single-services i {
 	font-size: 40px;
-	color: #0075ff;
+	color: #30ABDF;
 }
 .single-services h3 {
 	font-size: 18px;
@@ -1077,7 +1083,7 @@ Services CSS
 	z-index: 1;
 }
 .single-services:hover a {
-	color: #0075ff;
+	color: #30ABDF;
 	background: #fff;
 }
 .single-services a::after {
@@ -1404,7 +1410,7 @@ Pricing CSS
 	margin-bottom: 20px;
 }
 .pricing-table .price span {
-	color: #0078ff;
+	color: #30ABDF;
 	font-size: 34px;
 	font-weight: 700;
 }
@@ -1621,7 +1627,7 @@ Contact CSS
 	margin-bottom: 15px;
 }
 .contact-box h3 i {
-	color: #0075ff;
+	color: #30ABDF;
 	margin-right: 5px;
 }
 .contact-box ul {
@@ -1670,7 +1676,7 @@ Contact CSS
 	margin-right: 5px;
 }
 .get-in-touch ul li a:hover {
-	color: #0075ff;
+	color: #30ABDF;
 }
 #contactForm .btn:hover, #contactForm .btn:focus {
 	background: #fff;
@@ -1744,11 +1750,11 @@ Pagination CSS
 }
 .page-item.active .page-link {
 	color: #fff;
-	background-color: #0075ff;
+	background-color: #30ABDF;
 }
 .page-link:hover, .page-link:focus {
 	color: #fff;
-	background-color: #0075ff;
+	background-color: #30ABDF;
 }
 .page-link:focus {
 	box-shadow: unset;
@@ -1770,7 +1776,7 @@ Single Blog CSS
 	left: 0;
 	bottom: 0;
 	text-transform: uppercase;
-	background: #0075ff;
+	background: #30ABDF;
 	color: #fff;
 	padding: 10px 20px;
 	font-size: 22px;
@@ -1795,14 +1801,14 @@ Single Blog CSS
 	font-size: 15px;
 }
 .blog-details-heading ul li i {
-	color: #0075ff;
+	color: #30ABDF;
 }
 .blog-details-content p {
 	margin-top: 15px;
 }
 .blog-details-content .blockquote {
 	margin: 25px 0;
-	background: #0075ff;
+	background: #30ABDF;
 	padding: 25px;
 	color: #fff;
 }
@@ -1849,9 +1855,9 @@ Single Blog CSS
 	font-size: 15px;
 }
 .blog-details-meta .tags li a:hover {
-	background: #0075ff;
+	background: #30ABDF;
 	color: #fff;
-	border-color: #0075ff;
+	border-color: #30ABDF;
 }
 .blog-details-meta .share {
 	display: inline-block;
@@ -1868,9 +1874,9 @@ Single Blog CSS
 	border-radius: 50%;
 }
 .blog-details-meta .share li a:hover {
-	background: #0075ff;
+	background: #30ABDF;
 	color: #fff;
-	border-color: #0075ff;
+	border-color: #30ABDF;
 }
 .blog-details-content .title {
 	font-size: 24px;
