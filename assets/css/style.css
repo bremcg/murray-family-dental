@@ -67,6 +67,7 @@ p {
 	height: 100%;
 }
 .d-table-cell {
+	padding-bottom: 10rem;
 	vertical-align: middle;
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -391,10 +392,13 @@ Main Banner CSS
 ===============================*/
 .main-banner {
 	height: 730px;
-	background-image: url(../../assets/img/hero-bg.jpg);
+	/* background-image: url(../../assets/img/hero-bg.jpg); */
+	background-image: url(../../assets/img/family-dental-test.png);
 	position: relative;
-	background-size: cover;
-	background-position: center center;
+	/* background-size: cover; */
+	/* background-position: center center; */
+	background-position: right;
+	background-size: unset;
 	background-repeat: no-repeat;
     z-index: 1;
 }
@@ -417,7 +421,7 @@ Main Banner CSS
 }
 .hero-content h1 {
 	color: #1e3056;
-	font-size: 30px;
+	font-size: 28px;
 	margin-bottom: 20px;
 	line-height: 39px;
 }
@@ -447,9 +451,9 @@ Main Banner CSS
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background: #00c6ff;
-	background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
-	background: linear-gradient(to right, #0072ff, #00c6ff);
+	background: #B0DBC8;
+	background: -webkit-linear-gradient(to right, #B0DBC8, #00c6ff);
+	background: linear-gradient(to right, #B0DBC8, #00c6ff);
 	opacity: .77;
     z-index: -1;
 }
