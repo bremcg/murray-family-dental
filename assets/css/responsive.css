@@ -50,9 +50,12 @@
 		position: relative;
 		background: #fff !important;
 	}
+	.navbar-toggler {
+		font-size: 1.5rem;
+	}
 	.navbar-light .navbar-toggler {
-		color: #0075ff;
-		border-color: #0075ff;
+		color: #30ABDF !important;
+		border: none !important;
 	}
 	.navbar-light .navbar-toggler-icon {
 		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 117, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
@@ -86,6 +89,9 @@
 		background: linear-gradient(to right, #B0DBC8, #00c6ff);
 		opacity: .77;
 	}
+	.hero-content {
+		text-align: center;
+	}
 	.hero-content h1 {
 		color: #fff;
 		font-size: 22px;
@@ -101,7 +107,7 @@
 		color: #fff;
 	}
 	.hero-content .btn {
-		color: #0075ff;
+		color: #30ABDF;
 		border: none;
 	}
 	.hero-content .btn::after {
@@ -133,7 +139,7 @@
 		color: #1e3056;
 	}
 	.main-banner-three .hero-content h1 span {
-		color: #0078ff;
+		color: #30ABDF;
 	}
 	.main-banner-three .hero-content p {
 		color: #6f8ba4;
@@ -149,13 +155,13 @@
 	}
 	.main-banner-three .hero-content .btn::after {
 		background: #00c6ff;
-		background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
-		background: linear-gradient(to right, #0072ff, #00c6ff);
+		background: -webkit-linear-gradient(to right, #B0DBC8, #00c6ff);
+		background: linear-gradient(to right, #B0DBC8, #00c6ff);
 	}
 	.main-banner-three .hero-content .btn:hover, .main-banner-three .hero-content .btn:focus {
 		background: transparent;
-		border-color: #0078ff;
-		color: #0078ff;
+		border-color: #30ABDF;
+		color: #30ABDF;
 	}
 
 	.boxes-area {
@@ -466,9 +472,12 @@
 	.navbar {
 		background: #fff !important;
 	}
+	.navbar .text-right {
+		display: none;
+	}
 	.navbar-light .navbar-toggler {
-		color: #0075ff;
-		border-color: #0075ff;
+		color: #30ABDF !important;
+		border: none !important;
 	}
 	.navbar-light .navbar-toggler-icon {
 		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 117, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
@@ -486,8 +495,8 @@
 		border-radius: 5px;
 	}
 	.appointment-btn.white-btn {
-		color: #0075ff;
-		border-color: #0075ff;
+		color: #30ABDF;
+		border-color: #30ABDF;
 	}
 	
 	.main-banner {
@@ -497,9 +506,12 @@
 	}
 	.main-banner::before {
 		background: #00c6ff;
-		background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
-		background: linear-gradient(to right, #0072ff, #00c6ff);
+		background: -webkit-linear-gradient(to right #B0DBC8, #00c6ff);
+		background: linear-gradient(to right, #B0DBC8, #00c6ff);
 		opacity: .77;
+	}
+	.hero-content {
+		text-align: center;
 	}
 	.hero-content h1 {
 		color: #fff;
@@ -512,7 +524,7 @@
 		color: #fff;
 	}
 	.hero-content .btn {
-		color: #0075ff;
+		color: #30ABDF;
 		border: none;
 	}
 	.hero-content .btn::after {
@@ -541,7 +553,7 @@
 		color: #1e3056;
 	}
 	.main-banner-three .hero-content h1 span {
-		color: #0078ff;
+		color: #30ABDF;
 	}
 	.main-banner-three .hero-content p {
 		color: #6f8ba4;
@@ -552,13 +564,13 @@
 	}
 	.main-banner-three .hero-content .btn::after {
 		background: #00c6ff;
-		background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
-		background: linear-gradient(to right, #0072ff, #00c6ff);
+		background: -webkit-linear-gradient(to right, #B0DBC8, #00c6ff);
+		background: linear-gradient(to right, #B0DBC8, #00c6ff);
 	}
 	.main-banner-three .hero-content .btn:hover, .main-banner-three .hero-content .btn:focus {
 		background: transparent;
-		border-color: #0078ff;
-		color: #0078ff;
+		border-color: #30ABDF;
+		color: #30ABDF;
 	}
 	.main-banner-three .hero-image {
 		position: relative;
