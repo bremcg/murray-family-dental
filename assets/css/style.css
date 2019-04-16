@@ -896,22 +896,22 @@ Make an Appointment CSS
     position: relative;
 }
 .appointment-area::before, .appointment-area::after {
-    /* content: '';
+    content: '';
     position: absolute;
     right: 0;
     top: 0;
     width: 50%;
-    height: 100%; */
+    height: 100%;
 }
 .appointment-area::before {
-	/* background: linear-gradient(45deg, rgba(48,171,223,.8) 100%, transparent 100%); */
+	background: linear-gradient(45deg, rgba(48,171,223,.8) 100%, transparent 100%);
 	z-index: 1;
 }
 .appointment-area::after {
-    /* background-image: url(../../assets/img/appointment-bg.jpg);
+    background-image: url(../../assets/img/appointment-bg.jpg);
     background-position: center center;
     background-size: cover;
-	background-repeat: no-repeat; */
+	background-repeat: no-repeat;
 	background: none;
 }
 .appointment-area .section-title {
@@ -1007,10 +1007,10 @@ Make an Appointment CSS
     color: #92a5b8;
 }
 .appointment-form form .btn {
-	/* border: transparent;
+	border: transparent;
 	margin-top: 5px;
-	color: #30ABDF; */
-	display: none;
+	color: #30ABDF;
+	/* display: none; */
 }
 .appointment-form form .btn::after {
 	background: #fff !important;
