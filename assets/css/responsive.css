@@ -51,7 +51,7 @@
 		background: #fff !important;
 	}
 	.navbar-toggler {
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 	}
 	.navbar-light .navbar-toggler {
 		color: #30ABDF !important;
@@ -67,15 +67,15 @@
 		display: none;
 	}
 	.navbar-expand-lg > .container, .navbar-expand-lg > .container-fluid {
-		padding-right: 15px;
-		padding-left: 15px;
+		padding-right: 20px;
+		padding-left: 25px;
 	}
 	.navbar-toggle-btn {
 		margin: 0;
 		text-align: right;
 		position: absolute;
-		right: 0;
-		top: -58px;
+		right: -18px;
+		top: -50px;
 	}
 	
 	.main-banner {
@@ -486,7 +486,7 @@
 		border-radius: 0;
 	}
 	.navbar-toggle-btn {
-		text-align: center;
+		text-align: right;
 	}
 	.navbar-collapse {
 		background: #fff;
