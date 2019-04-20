@@ -247,7 +247,6 @@ button {
 	margin: 0 auto;
 }
 
-
 /*=============================
 Preloader CSS
 ===============================*/
@@ -1992,4 +1991,19 @@ Go Top CSS
 .go-top:hover {
 	color: #fff;
 	background: #30ABDF;
+}
+
+/* Utilities */
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+.text-left {
+	text-align: left;
+}
+
+.mb-0 {
+	margin-bottom: 0px;
 }
