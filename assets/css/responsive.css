@@ -79,8 +79,10 @@
 	}
 	
 	.main-banner {
+		background-position: center;
 		height: 100%;
-		padding-top: 120px;
+		padding-top: 100px;
+		padding-bottom: 0;
 	}
 	.main-banner::before {
 		background: #B0DBC8;
