@@ -398,7 +398,7 @@ Main Banner CSS
 .main-banner {
 	height: 730px;
 	/* background-image: url(../../assets/img/hero-bg.jpg); */
-	background-image: url(../../assets/img/family-dental-test-crop.png);
+	background-image: url(../../assets/img/family-dental-two.jpg);
 	position: relative;
 	/* background-size: cover; */
 	/* background-position: center center; */
@@ -490,6 +490,7 @@ Boxes Area CSS
 	text-align: center;
 	padding: 35px 20px;
 	border-radius: 5px 30px 5px 5px;
+	/* border-radius: 5rem; */
 	background: #fff;
     position: relative;
 	-moz-transition: .3s;
@@ -660,6 +661,10 @@ Who We Are CSS
 	background-color: #fff;
 	margin: 5px;
 	box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+}
+
+.who-we-are img {
+	border-radius: 90px 45px 30px 15px/45px 30px 45px 90px;
 }
 .member-details img {
 	-webkit-transform: rotate(45deg) translate(0, 15px) scale(1.2);
@@ -1438,7 +1443,10 @@ Pricing CSS
 .pricing-features ul li:last-child {
 	margin-bottom: 0;
 }
-
+.payment-options img {
+	max-height: 90px;
+	padding-bottom: 1.4rem;
+}
 
 /*=============================
 Testimonials CSS
@@ -1994,15 +2002,6 @@ Go Top CSS
 }
 
 /* Utilities */
-.text-center {
-	text-align: center;
-}
-.text-right {
-	text-align: right;
-}
-.text-left {
-	text-align: left;
-}
 
 .mb-0 {
 	margin-bottom: 0px;
