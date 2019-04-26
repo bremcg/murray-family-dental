@@ -357,7 +357,7 @@ Navbar CSS
 	font-weight: 600;
 	color: #30ABDF;
 	border: 1px solid #30ABDF;
-	padding: 8px 30px;
+	padding: 10px 30px;
 	border-radius: 30px;
 }
 .appointment-btn:hover {
@@ -507,8 +507,8 @@ Boxes Area CSS
     width: 100%;
     height: 50%;
     background: #00c6ff;
-    background: -webkit-linear-gradient(to right, #30ABDF, #00c6ff);
-    background: linear-gradient(to right, #30ABDF, #00c6ff);
+    background: -webkit-linear-gradient(to right, #30ABDF, #6AEDC2);
+    background: linear-gradient(to right, #30ABDF, #6AEDC2);
     opacity: 0;
     visibility: hidden;
 	border-radius: 5px 30px 5px 5px;
@@ -523,7 +523,7 @@ Boxes Area CSS
 	transform: translateY(-10px);
 }
 .single-box:hover::before {
-	opacity: 1;
+	opacity: 0.9;
     height: 100%;
     visibility: visible;
 }
@@ -664,7 +664,7 @@ Who We Are CSS
 }
 
 .who-we-are img {
-	border-radius: 90px 45px 30px 15px/45px 30px 45px 90px;
+	border-radius: 77% 23% 26% 74% / 43% 22% 78% 57%;
 }
 .member-details img {
 	-webkit-transform: rotate(45deg) translate(0, 15px) scale(1.2);
@@ -1032,6 +1032,9 @@ Services CSS
     position: relative;
 	border-radius: 30px 5px 5px 5px;
 	margin-bottom: 1rem;
+	max-height: 340px;
+	overflow: hidden;
+	padding-bottom: 30px;
 	-moz-transition: .3s;
 	-o-transition: .3s;
 	-ms-transition: .3s;
@@ -1039,7 +1042,7 @@ Services CSS
 	transition: .3s;
 }
 .single-services::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -1047,8 +1050,8 @@ Services CSS
     height: 100%;
     background: #00c6ff;
 	border-radius: 30px 5px 5px 5px;
-    background: -webkit-linear-gradient(to right, #30ABDF, #00c6ff);
-    background: linear-gradient(to right, #30ABDF, #00c6ff);
+    background: -webkit-linear-gradient(to right, #30ABDF, #B0DBC8);
+    background: linear-gradient(to right, #30ABDF, #B0DBC8);
     opacity: 0;
     visibility: hidden;
 	-moz-transition: all 0.3s ease 0s;
@@ -1063,7 +1066,7 @@ Services CSS
 	border-radius: 0;
 }
 .single-services:hover::before {
-	opacity: 1;
+	opacity: 0.8;
     visibility: visible;
 	border-radius: 0;
 }
@@ -1213,6 +1216,10 @@ Fun Facts CSS
 /*=============================
 Gallery CSS
 ===============================*/
+#patient .appointment-btn {
+	width: 220px;
+}
+
 .gallery-area {
     padding-bottom: 70px;
 }
@@ -2005,4 +2012,8 @@ Go Top CSS
 
 .mb-0 {
 	margin-bottom: 0px;
+}
+
+.icon-svg {
+	max-height: 40px;
 }
