@@ -1218,8 +1218,11 @@ Gallery CSS
 ===============================*/
 #patient .appointment-btn {
 	width: 220px;
+	background: transparent;
 }
-
+#patient .appointment-btn:hover {
+	background: #30ABDF;
+}
 .gallery-area {
     padding-bottom: 70px;
 }
