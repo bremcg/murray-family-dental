@@ -2020,3 +2020,9 @@ Go Top CSS
 .icon-svg {
 	max-height: 40px;
 }
+
+/* Overrides */
+
+.contact-box a.fax:hover {
+	color: #fff;
+}
