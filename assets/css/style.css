@@ -533,7 +533,7 @@ Boxes Area CSS
 	-webkit-transition: .3s;
 	transition: .3s;
 }
-.single-box::before {
+/* .single-box::before {
     content: '';
     position: absolute;
     left: 0;
@@ -560,7 +560,7 @@ Boxes Area CSS
 	opacity: 0.9;
     height: 100%;
     visibility: visible;
-}
+} */
 .single-box i {
 	font-size: 40px;
 	color: #30ABDF;
@@ -578,9 +578,9 @@ Boxes Area CSS
 	-webkit-transition: .3s;
 	transition: .3s;
 }
-.single-box:hover h3, .single-box:hover p, .single-box:hover i {
+/* .single-box:hover h3, .single-box:hover p, .single-box:hover i {
 	color: #fff;
-}
+} */
 
 
 /*=============================
@@ -1168,7 +1168,6 @@ Fun Facts CSS
 ===============================*/
 .fun-facts-area {
     position: relative;
-    background-image: url(../../assets/img/fun-facts-bg.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
