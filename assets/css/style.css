@@ -1,10 +1,4 @@
 /*
-@File: GoldMedi Template Styles
-
-* This file contains the styling for the actual tepmlate, this
-is the file you need to edit to change the look of the
-tepmlate.
-
 This files table contents are outlined below>>>>>
 
 *******************************************
@@ -447,7 +441,6 @@ Main Banner CSS
 	background-repeat: no-repeat;
 } */
 .hero-content h1 {
-	/* color: #1e3056; */
 	color: #fff;
 	font-size: 32px;
 	margin-bottom: 20px;
@@ -455,7 +448,6 @@ Main Banner CSS
 	margin-right: 13px;
 }
 .hero-content h1 span {
-	/* color: #30ABDF; */
 	color: #b1fddc;
 }
 .hero-content p {
@@ -508,7 +500,6 @@ Main Banner CSS
 	text-align: right;
 	top: -155px;
 }
-
 
 /*=============================
 Boxes Area CSS
@@ -950,7 +941,6 @@ Make an Appointment CSS
     background-position: center center;
     background-size: cover;
 	background-repeat: no-repeat;
-	background: none;
 }
 .appointment-area .section-title {
 	text-align: left;
@@ -990,9 +980,9 @@ Make an Appointment CSS
 	display: block;
 	color: #fff;
 	padding: 8px 20px;
-	background: #00c6ff;
-	background: -webkit-linear-gradient(to right, #30ABDF , #00c6ff);
-	background: linear-gradient(to right, #30ABDF , #00c6ff);
+    background: #00c6ff;
+    background: -webkit-linear-gradient(to right, #30ABDF, #B0DBC8);
+    background: linear-gradient(to right, #30ABDF, #B0DBC8);
 	font-size: 16px;
 	position: relative;
 }
@@ -1075,7 +1065,7 @@ Services CSS
 	-webkit-transition: .3s;
 	transition: .3s;
 }
-.single-services::before {
+/* .single-services::before {
     content: "";
     position: absolute;
     left: 0;
@@ -1103,7 +1093,7 @@ Services CSS
 	opacity: 0.8;
     visibility: visible;
 	border-radius: 0;
-}
+} */
 .single-services i {
 	font-size: 40px;
 	color: #30ABDF;
@@ -1121,9 +1111,17 @@ Services CSS
 	-webkit-transition: .3s;
 	transition: .3s;
 }
-.single-services:hover h3, .single-services:hover p, .single-services:hover i {
-	color: #fff;
+
+.single-services p {
+	display: -webkit-box;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 7;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
 }
+/* .single-services:hover h3, .single-services:hover p, .single-services:hover i {
+	color: #fff;
+} */
 .single-services a {
 	width: 40px;
 	height: 40px;
@@ -1669,8 +1667,8 @@ Contact CSS
     height: 100%;
 	border-radius: 15px 5px 5px 5px;
     background: #00c6ff;
-    background: -webkit-linear-gradient(to right,#30ABDF, #00c6ff);
-    background: linear-gradient(to right,#30ABDF, #00c6ff);
+    background: -webkit-linear-gradient(to right, #30ABDF, #B0DBC8);
+    background: linear-gradient(to right, #30ABDF, #B0DBC8);
     opacity: 0;
     visibility: hidden;
     z-index: -1;
