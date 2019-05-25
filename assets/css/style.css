@@ -116,8 +116,8 @@ button {
 	z-index: -1;
 	bottom: auto;
     background: #00c6ff;
-    background: -webkit-linear-gradient(to right, #78DCB0, #00c6ff);
-    background: linear-gradient(to right, #78DCB0, #00c6ff);
+    background: -webkit-linear-gradient(to left, #78DCB0, #00c6ff);
+    background: linear-gradient(to left, #78DCB0, #00c6ff);
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -396,9 +396,9 @@ Main Banner CSS
 ===============================*/
 .main-banner {
 	height: 730px;
-	background-image: url(../../assets/img/family-dental-two.jpg);
+	background-image: url(../../assets/img/hero-image.jpg);
 	position: relative;
-	/* background-size: cover; */
+	background-size: cover;
 	/* background-position: center center; */
 	/* background-position: right; */
 	/* background-size: unset; */
@@ -511,7 +511,7 @@ Boxes Area CSS
     z-index: 3;
 }
 .single-box {
-	box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+	box-shadow: 0 8px 48px rgba(231, 243, 254, 0.8);
 	text-align: center;
 	padding: 35px 20px;
 	border-radius: 5px 30px 5px 5px;
@@ -554,7 +554,7 @@ Boxes Area CSS
 } */
 .single-box i {
 	font-size: 40px;
-	color: #30ABDF;
+	color: #6AEDC2;
 }
 .single-box h3 {
 	font-size: 18px;
@@ -981,8 +981,8 @@ Make an Appointment CSS
 	color: #fff;
 	padding: 8px 20px;
     background: #00c6ff;
-    background: -webkit-linear-gradient(to right, #30ABDF, #B0DBC8);
-    background: linear-gradient(to right, #30ABDF, #B0DBC8);
+    background: -webkit-linear-gradient(to right, #30ABDF, #6AEDC2);
+    background: linear-gradient(to right, #30ABDF, #6AEDC2);
 	font-size: 16px;
 	position: relative;
 }
@@ -1178,8 +1178,8 @@ Fun Facts CSS
 	width: 100%;
 	height: 100%;
 	background: #00c6ff;
-	background: -webkit-linear-gradient(to right, #30ABDF, #00c6ff);
-	background: linear-gradient(to right, #30ABDF, #00c6ff);
+	background: -webkit-linear-gradient(to left, #78DCB0, #00c6ff);
+	background: linear-gradient(to left, #78DCB0, #00c6ff);
 	opacity: .8;
 }
 .fun-fact {
@@ -1297,8 +1297,8 @@ Gallery CSS
 	width: 100%;
 	height: 100%;
 	background: #00c6ff;
-	background: -webkit-linear-gradient(to right, #30ABDF, #00c6ff);
-	background: linear-gradient(to right, #30ABDF, #00c6ff);
+	background: -webkit-linear-gradient(to left, #30ABDF, #00c6ff);
+	background: linear-gradient(to left, #30ABDF, #00c6ff);
 	z-index: -1;
 	opacity: 0;
 	-webkit-transform: scale(.9);
@@ -1436,8 +1436,8 @@ Pricing CSS
 	height: 100%;
 	background: #00c6ff;
 	border-radius: 5px 5px 0 0;
-	background: -webkit-linear-gradient(to right, #30ABDF, #00c6ff);
-	background: linear-gradient(to right, #30ABDF, #00c6ff);
+	background: -webkit-linear-gradient(to left, #30ABDF, #00c6ff);
+	background: linear-gradient(to left, #30ABDF, #00c6ff);
 	opacity: 0;
 	visibility: hidden;
 	z-index: -1;
@@ -1640,7 +1640,7 @@ News CSS
 Contact CSS
 ===============================*/
 .contact-box {
-	box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+	box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.06);
 	background: #fff;
 	text-align: center;
 	padding: 30px 20px;
@@ -1666,9 +1666,9 @@ Contact CSS
     width: 100%;
     height: 100%;
 	border-radius: 15px 5px 5px 5px;
-    background: #00c6ff;
-    background: -webkit-linear-gradient(to right, #30ABDF, #B0DBC8);
-    background: linear-gradient(to right, #30ABDF, #B0DBC8);
+    background: #6AEDC2;
+    background: -webkit-linear-gradient(to right, #30ABDF, #6AEDC2);
+    background: linear-gradient(to right, #30ABDF, #6AEDC2);
     opacity: 0;
     visibility: hidden;
     z-index: -1;
@@ -1712,8 +1712,11 @@ Contact CSS
 	-webkit-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
 }
-.contact-box:hover h3, .contact-box:hover h3 i, .contact-box:hover ul li, .contact-box:hover p a {
+.contact-box:hover h3, .contact-box:hover ul li, .contact-box:hover p a {
 	color: #fff;
+}
+.contact-box:hover h3 i {
+	color: #3a6d9a;
 }
 .get-in-touch h3 {
 	font-size: 20px;
@@ -1736,7 +1739,7 @@ Contact CSS
 	margin-right: 5px;
 }
 .get-in-touch ul li a:hover {
-	color: #30ABDF;
+	color: #3a6d9a;
 }
 #contactForm .btn:hover, #contactForm .btn:focus {
 	background: #fff;
@@ -2057,3 +2060,8 @@ Go Top CSS
 .contact-box a.fax:hover {
 	color: #fff;
 }
+
+/* Colors */
+.primary-color {
+	color: #48c5d6;
+} 
