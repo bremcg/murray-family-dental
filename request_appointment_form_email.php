@@ -1,96 +1,85 @@
 <?php
-if(isset($_POST['email'])) {
- 
-    // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "andrewariley87@gmail.com";
-    $email_subject = "Schedule Appointment for {$_POST['first_name']} {$_POST['last_name']}";
- 
-    function died($error) {
-        // your error code can go here
-        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
-        echo "These errors appear below.<br /><br />";
-        echo $error."<br /><br />";
-        echo "Please go back and fix these errors.<br /><br />";
-        die();
-    }
- 
- 
-    // validation expected data exists
-    if(!isset($_POST['first_name']) ||
-        !isset($_POST['last_name']) ||
-        !isset($_POST['email']) ||
-        !isset($_POST['phone_number']) ||
-        !isset($_POST['appointment_date']) ||
-        !isset($_POST['preffered_time']) ||
-        !isset($_POST['symptoms'])) {
-        died('We are sorry, but there appears to be a problem with the form you submitted.');       
-    }
- 
-     
- 
-    $first_name = $_POST['first_name']; // required
-    $last_name = $_POST['last_name']; // required
-    $email_from = $_POST['email']; // required
-    $phone_number = $_POST['phone_number']; // not required
-    $appointment_date = $_POST['appointment_date']; // already formatted by form
-    $preffered_time = $_POST['preffered_time']; // already formatted by form
-    $symptoms = $_POST['symptoms']; // required
- 
-    $error_message = "";
-    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
- 
-  if(!preg_match($email_exp,$email_from)) {
-    $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
-  }
- 
-    $string_exp = "/^[A-Za-z .'-]+$/";
- 
-  if(!preg_match($string_exp,$first_name)) {
-    $error_message .= 'The First Name you entered does not appear to be valid.<br />';
-  }
- 
-  if(!preg_match($string_exp,$last_name)) {
-    $error_message .= 'The Last Name you entered does not appear to be valid.<br />';
-  }
- 
-  if(strlen($symptoms) < 2) {
-    $error_message .= 'The symptoms you entered do not appear to be valid.<br />';
-  }
- 
-  if(strlen($error_message) > 0) {
-    died($error_message);
-  }
- 
-    $email_message = "Form details below.\n\n";
- 
-     
-    function clean_string($string) {
-      $bad = array("content-type","bcc:","to:","cc:","href");
-      return str_replace($bad,"",$string);
-    }
- 
-     
- 
-    $email_message .= "First Name: ".clean_string($first_name)."\n";
-    $email_message .= "Last Name: ".clean_string($last_name)."\n";
-    $email_message .= "Email: ".clean_string($email_from)."\n";
-    $email_message .= "Phone Number: ".clean_string($phone_number)."\n";
-    $email_message .= "Date: ".clean_string($appointment_date)."\n";
-    $email_message .= "Time: ".clean_string($preffered_time)."\n";
-    $email_message .= "Symptoms: ".clean_string($symptoms)."\n";
- 
-// create email headers
-$headers = 'From: '.$email_from."\r\n".
-'Reply-To: '.$email_from."\r\n" .
-'X-Mailer: PHP/' . phpversion();
-@mail($email_to, $email_subject, $email_message, $headers);  
-?>
- 
-<!-- include your own success html here -->
- 
-Thank you for contacting us. We will be in touch with you very soon.
- 
-<?php
- 
-}
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'vendor/autoload.php';
+
+$mail = new PHPMailer(true);
+
+$first_name = $_POST['first_name']; // required
+$last_name = $_POST['last_name']; // required
+$email_from = $_POST['email']; // required
+$phone_number = $_POST['phone_number']; // not required
+$appointment_date = $_POST['appointment_date']; // already formatted by form
+$preffered_time = $_POST['preffered_time']; // already formatted by form
+$symptoms = $_POST['symptoms']; // required
+
+
+
+
+
+// Tell PHPMailer to use SMTP
+$mail->isSMTP();
+
+// Replace sender@example.com with your "From" address.
+// This address must be verified with Amazon SES.
+$mail->setFrom('sender@example.com', 'Sender Name');
+
+// Replace recipient@example.com with a "To" address. If your account
+// is still in the sandbox, this address must be verified.
+// Also note that you can include several addAddress() lines to send
+// email to multiple recipients.
+$mail->addAddress('recipient@example.com', 'Recipient Name');
+
+// Replace smtp_username with your Amazon SES SMTP user name.
+$mail->Username = 'smtp_username';
+
+// Replace smtp_password with your Amazon SES SMTP password.
+$mail->Password = 'smtp_password';
+
+// Specify a configuration set. If you do not want to use a configuration
+// set, comment or remove the next line.
+$mail->addCustomHeader('X-SES-CONFIGURATION-SET', 'ConfigSet');
+
+// If you're using Amazon SES in a region other than US West (Oregon),
+// replace email-smtp.us-west-2.amazonaws.com with the Amazon SES SMTP
+// endpoint in the appropriate region.
+$mail->Host = 'email-smtp.us-west-2.amazonaws.com';
+
+// The subject line of the email
+$mail->Subject = 'Amazon SES test (SMTP interface accessed using PHP)';
+
+// The HTML-formatted body of the email
+$body="";
+
+$body .=  "<ul><li>First Name:" . $first_name . "</li>";
+$body .=  "<li>Last Name:" . $last_name . "</li>";
+$body .= "<li>Email:" . $email_from . "</li>";
+$body .= "<li>Phone Number:" . $phone_number . "</li>";
+$body .= "<li>Appointment Date:" . $appointment_date . "</li>";
+$body .= "<li>Time:" . $preffered_time . "</li>";
+$body .= "<li>Symptoms:" . $symptoms . "</li>";
+
+$mail->Body = $body;
+
+// Tells PHPMailer to use SMTP authentication
+$mail->SMTPAuth = true;
+
+// Enable TLS encryption over port 587
+$mail->SMTPSecure = 'tls';
+$mail->Port = 587;
+
+// Tells PHPMailer to send HTML-formatted email
+$mail->isHTML(true);
+
+// The alternative email body; this is only displayed when a recipient
+// opens the email in a non-HTML email client. The \r\n represents a
+// line break.
+$mail->AltBody = "Email Test\r\nThis email was sent through the
+    Amazon SES SMTP interface using the PHPMailer class.";
+
+$mail->send();
+ header('Location: contact-thank-you.html');
+ exit();
+
 ?>
