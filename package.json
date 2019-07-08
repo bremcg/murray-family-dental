@@ -1,0 +1,23 @@
+{
+  "name": "murray-family-dental",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bremcg/murray-family-dental.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bremcg/murray-family-dental/issues"
+  },
+  "homepage": "https://github.com/bremcg/murray-family-dental#readme",
+  "devDependencies": {
+    "corvid-cli": "^0.1.76"
+  }
+}
