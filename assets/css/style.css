@@ -116,8 +116,8 @@ button {
 	z-index: -1;
 	bottom: auto;
     background: #00c6ff;
-    background: -webkit-linear-gradient(to left, #78DCB0, #00c6ff);
-    background: linear-gradient(to left, #78DCB0, #00c6ff);
+    background: -webkit-linear-gradient(to left, #30ABDF, #B0DBC8);
+	background: linear-gradient(to left, #30ABDF, #B0DBC8); /*#78DCB0*/
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -349,13 +349,14 @@ Navbar CSS
 .appointment-btn {
 	font-size: 14px;
 	font-weight: 600;
-	color: #30ABDF;
+	color: #fff;
+	background: #30ABDF;
 	border: 1px solid #30ABDF;
 	padding: 10px 30px;
 	border-radius: 30px;
 }
 .appointment-btn:hover {
-	background: #30ABDF;
+	background: rgb(45, 153, 199);
     color: #fff;
 }
 .appointment-btn.white-btn {
@@ -448,7 +449,7 @@ Main Banner CSS
 	margin-right: 13px;
 }
 .hero-content h1 span {
-	color: #b1fddc;
+	color: #97ffd1;
 }
 .hero-content p {
 	margin-bottom: 25px;
@@ -554,7 +555,7 @@ Boxes Area CSS
 } */
 .single-box i {
 	font-size: 40px;
-	color: #6AEDC2;
+	color: #B0DBC8;
 }
 .single-box h3 {
 	font-size: 18px;
@@ -981,8 +982,8 @@ Make an Appointment CSS
 	color: #fff;
 	padding: 8px 20px;
     background: #00c6ff;
-    background: -webkit-linear-gradient(to right, #30ABDF, #6AEDC2);
-    background: linear-gradient(to right, #30ABDF, #6AEDC2);
+    background: -webkit-linear-gradient(to right, #30ABDF, #B0DBC8);
+    background: linear-gradient(to right, #30ABDF, #B0DBC8);
 	font-size: 16px;
 	position: relative;
 }
@@ -1249,10 +1250,10 @@ Gallery CSS
 ===============================*/
 #patient .appointment-btn {
 	width: 220px;
-	background: transparent;
+	background: #30ABDF;
 }
 #patient .appointment-btn:hover {
-	background: #30ABDF;
+	background: #2689b3;
 }
 .gallery-area {
     padding-bottom: 70px;
@@ -1666,9 +1667,7 @@ Contact CSS
     width: 100%;
     height: 100%;
 	border-radius: 15px 5px 5px 5px;
-    background: #6AEDC2;
-    background: -webkit-linear-gradient(to right, #30ABDF, #6AEDC2);
-    background: linear-gradient(to right, #30ABDF, #6AEDC2);
+    background: rgba(176, 219, 200, 0.4);
     opacity: 0;
     visibility: hidden;
     z-index: -1;
@@ -1712,9 +1711,9 @@ Contact CSS
 	-webkit-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
 }
-.contact-box:hover h3, .contact-box:hover ul li, .contact-box:hover p a {
+/* .contact-box:hover h3, .contact-box:hover ul li, .contact-box:hover p a {
 	color: #fff;
-}
+} */
 .contact-box:hover h3 i {
 	color: #3a6d9a;
 }
